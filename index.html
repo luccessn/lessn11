@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./csss/reset.css" />
+    <link rel="stylesheet" href="./csss/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+  </head>
+  <body>
+    <section class="splide" aria-label="Splide Basic HTML Example">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img
+              src="https://i.ytimg.com/vi/cXTejUxflG8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBL6v3eVTDXsfJXBrOKpoEhPMC61g"
+              alt=""
+              class="slider"
+            />
+          </li>
+
+          <li class="splide__slide">
+            <img
+              src="https://static.hbo.com/game-of-thrones-1-1920x1080.jpg"
+              alt=""
+              url=""
+              class="slider"
+            />
+          </li>
+          <li class="splide__slide">
+            <img
+              src="https://cdns-images.dzcdn.net/images/cover/25eff62c7a349d423b7edad7ff804f95/0x1900-000000-80-0-0.jpg"
+              alt=""
+              class="slider"
+            />
+          </li>
+          <li class="splide__slide">
+            <img
+              src="https://bellmedia-images.imgix.net/lede/wp-content/uploads/2024/06/SCRID-1706763617067673_ThePenguinTeaseVersionBS1_3840x2160_LAN-en-US_PUR-tileburnedin.jpg?auto=format&q=60&crop=faces%2C%20edges&ar=16%3A9&fit=crop&ixlib=react-9.8.1&w=1400"
+              alt=""
+              class="slider"
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <script>
+      var splide = new Splide(".splide", {
+        type: "loop",
+        drag: "free",
+        snap: true,
+        perPage: 3,
+      });
+
+      splide.mount();
+    </script>
+  </body>
+</html>
